@@ -5,6 +5,9 @@
   "mini.surround": { "branch": "main", "commit": "97796f68a8698d9b63ac3927da0d0bf5c3a0876b" },
   "nvim-lspconfig": { "branch": "master", "commit": "ff6471d4f837354d8257dfa326b031dd8858b16e" },
   "nvim-treesitter": { "branch": "master", "commit": "9df671fda41bc4af91b9f7ea3fa1628ba988a77b" },
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "telescope-fzf-native.nvim": { "branch": "main", "commit": "1f08ed60cafc8f6168b72b80be2b2ea149813e55" },
+  "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" }
 }
