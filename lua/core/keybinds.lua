@@ -41,28 +41,8 @@ else
 end
 
 --  ─( Colorscheme Picker )─────────────────────────────────────────────
-local set_colorscheme = function(name) pcall(vim.cmd, 'colorscheme ' .. name) end
 local pick_colorscheme = function()
-	local init_scheme = vim.g.colors_name
-	local new_scheme = require('mini.pick').start({
-		source = {
-			items = vim.fn.getcompletion("", "color"),
-			preview = function(_, item)
-				set_colorscheme(item)
-			end,
-			choose = set_colorscheme
-		},
-		mappings = {
-			preview = {
-				char = '<C-p>',
-				func = function()
-					local item = require('mini.pick').get_picker_matches()
-					pcall(vim.cmd, 'colorscheme ' .. item.current)
-				end
-			}
-		}
-	})
-	if new_scheme == nil then set_colorscheme(init_scheme) end
+	require('core.colorscheme-picker').pick_colorscheme()
 end
 
 -- find keymaps
@@ -77,6 +57,7 @@ end, { desc = 'Find String Cursor' })
 keymap("n", "<leader>fh", function() require('mini.pick').builtin.help() end, { desc = 'Find Help' })
 keymap("n", "<leader>fl", function() require('mini.extra').pickers.hl_groups() end, { desc = 'Find HL Groups' })
 keymap("n", "<leader>fc", pick_colorscheme, { desc = 'Change Colorscheme' })
+keymap("n", "<leader>uc", pick_colorscheme, { desc = 'Change Colorscheme' })
 keymap('n', ',', function() require('mini.extra').pickers.buf_lines({ scope = 'current' }) end, { nowait = true, desc = 'Search Lines' })
 
 -- undotree

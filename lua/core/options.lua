@@ -54,7 +54,7 @@ now(function()
 
 	vim.o.undofile = true    -- enable persistent undo
 	vim.o.undolevels = 10000 -- 10x more undo levels
-
+	vim.o.swapfile = false   -- disable swap file, I find it annoying more times than I find it useful
 
 	-- define <leader> and <localleader> keys
 	-- you should use `vim.keycode` to translate keycodes or pass raw keycode values like `" "` instead of just `"<space>"`
@@ -63,5 +63,6 @@ now(function()
 
 	-- remove netrw banner for cleaner looking
 	vim.g.netrw_banner = 0
+	vim.cmd("set completeopt+=noselect")
 end)
 

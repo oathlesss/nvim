@@ -26,6 +26,7 @@ require("core.options")
 
 -- plugins
 require("core.colorschemes")
+require("core.colorscheme-picker").setup()
 require("core.mini-modules")
 require("core.barbecue")
 require("core.supermaven")
@@ -33,6 +34,8 @@ require("core.undotree")
 require("core.oil")
 require("core.overseer")
 require("core.harpoon")
+require("core.treesitter")
+require("core.lspconfig")
 
 -- keybinds
 require("core.keybinds")

@@ -82,6 +82,7 @@ later(function()
 			{ mode = "n", keys = "<Leader>s", desc = "󰆓 Session" },
 			{ mode = "n", keys = "<Leader>s", desc = " Terminal" },
 			{ mode = "n", keys = "<Leader>u", desc = "󰔃 UI" },
+			{ mode = "n", keys = "<Leader>uc", desc = "Change Colorscheme" },
 			{ mode = "n", keys = "<Leader>w", desc = " Wiki" },
 			require("mini.clue").gen_clues.g(),
 			require("mini.clue").gen_clues.builtin_completion(),
