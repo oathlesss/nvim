@@ -36,6 +36,9 @@ require("core.overseer")
 require("core.harpoon")
 require("core.treesitter")
 require("core.lspconfig")
+require("core.blame")
+require("core.fff")
+require("core.lazydev")
 
 -- keybinds
 require("core.keybinds")

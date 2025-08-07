@@ -9,5 +9,5 @@ now(function()
   add({ source = 'olimorris/onedarkpro.nvim' })
   add({ source = 'loctvl842/monokai-pro.nvim' })
 
-  vim.cmd('colorscheme vague')
+  vim.cmd('colorscheme tokyonight')
 end)

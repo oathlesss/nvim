@@ -4,8 +4,9 @@ keymap("n", "<leader>mu", function() require('mini.deps').update() end, { desc =
 
 -- lsp keymaps
 keymap("n", "gd", function() vim.lsp.buf.definition() end, { desc = 'Go To Definition' })
+keymap("n", "<leader>lr", function() vim.lsp.buf.references() end, { desc = 'Get References' })
 keymap("n", "<leader>ls", "<cmd>Pick lsp scope='document_symbol'<cr>", { desc = 'Show all Symbols' })
-keymap("n", "<leader>lr", function() vim.lsp.buf.rename() end, { desc = 'Rename This' })
+keymap("n", "<leader>lR", function() vim.lsp.buf.rename() end, { desc = 'Rename This' })
 keymap("n", "<leader>la", function() vim.lsp.buf.code_action() end, { desc = 'Code Actions' })
 keymap("n", "<leader>le", function() require('mini.extra').pickers.diagnostic({ scope = "current" }) end, { desc = "LSP Errors in Buffer" })
 keymap("n", "<leader>lf", function() vim.diagnostic.setqflist({ open = true }) end, { desc = "LSP Quickfix" })
@@ -46,7 +47,7 @@ local pick_colorscheme = function()
 end
 
 -- find keymaps
-keymap("n", "<leader>ff", function() require('mini.pick').builtin.files() end, { desc = 'Find File' })
+-- keymap("n", "<leader>ff", function() require('mini.pick').builtin.files() end, { desc = 'Find File' })
 keymap("n", "<leader>fr", function() require('mini.pick').builtin.resume() end, { desc = 'Find Resume' })
 keymap("n", "<leader><space>", function() require('mini.pick').builtin.buffers() end, { desc = 'Find Buffer' })
 keymap("n", "<leader>fg", function() require('mini.pick').builtin.grep_live() end, { desc = 'Find String' })
@@ -69,3 +70,6 @@ keymap('n', '<leader>e', function() require('oil').open() end, { desc = "Oil" })
 -- overseer
 keymap('n', '<leader>or', vim.cmd.OverseerRun, { desc = "Overseer Run" })
 keymap('n', '<leader>ot', vim.cmd.OverseerToggle, { desc = "Overseer Toggle" })
+
+-- blame
+keymap('n', '<leader>gB', vim.cmd.BlameToggle, { desc = "Blame Toggle" })
