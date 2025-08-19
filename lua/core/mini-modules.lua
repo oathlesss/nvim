@@ -124,21 +124,22 @@ later(function()
 end)
 later(function() require("mini.doc").setup() end)
 later(function() require("mini.extra").setup() end)
-later(function()
-	require("mini.files").setup({
-		mappings = {
-			close = '<ESC>',
-		},
-		windows = {
-			preview = true,
-			border = "rounded",
-			width_preview = 80,
-		},
-		options = {
-			use_as_default_explorer = false,
-		},
-	})
-end)
+-- later(function()
+-- 	require("mini.files").setup({
+-- 		mappings = {
+-- 			close = '<ESC>',
+-- 			paste = '<D-v>',
+-- 		},
+-- 		windows = {
+-- 			preview = true,
+-- 			border = "rounded",
+-- 			width_preview = 80,
+-- 		},
+-- 		options = {
+-- 			use_as_default_explorer = false,
+-- 		},
+-- 	})
+-- end)
 later(function() require("mini.fuzzy").setup() end)
 later(function() require("mini.git").setup() end)
 later(function()

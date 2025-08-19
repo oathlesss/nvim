@@ -2,7 +2,7 @@ local now, add = MiniDeps.now, MiniDeps.add
 
 now(function()
 	add({
-		source = "dmtrKovalenko/fff.nvim",
+		source = "jglasovic/venv-lsp.nvim",
 	})
-	require("fff").setup()
+	require("venv-lsp").setup()
 end)

@@ -33,4 +33,5 @@ vim.lsp.enable('ts_ls')
 vim.lsp.enable('pyrefly')
 vim.lsp.enable('ruff')
 -- vim.lsp.enable('basedpyright')
+vim.lsp.enable('ruby_lsp')
 

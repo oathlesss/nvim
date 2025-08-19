@@ -37,8 +37,10 @@ require("core.harpoon")
 require("core.treesitter")
 require("core.lspconfig")
 require("core.blame")
-require("core.fff")
 require("core.lazydev")
+require("core.fzf-lua")
+require("core.kulala")
+require("core.venv-lsp")
 
 -- keybinds
 require("core.keybinds")
