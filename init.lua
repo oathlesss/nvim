@@ -47,3 +47,4 @@ require("core.keybinds")
 
 require("core.lsp")
 require("core.autocommands")
+require("core.usercommands")
