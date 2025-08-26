@@ -16,7 +16,7 @@ local M = {}
 ---@type ColorschemePickerConfig
 local config = {
 	ghostty_config_path = vim.fn.expand("~/.config/ghostty/config"),
-	nvim_colorscheme_file = vim.fn.expand("~/dotfiles/nvim/lua/core/colorschemes.lua"),
+	nvim_colorscheme_file = vim.fn.expand("~/personal/repos/dotfiles/nvim/lua/core/colorschemes.lua"),
 	state_file = vim.fn.expand("~/.config/nvim/.colorscheme_state"),
 }
 
