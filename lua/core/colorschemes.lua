@@ -10,5 +10,5 @@ now(function()
 	add({ source = 'loctvl842/monokai-pro.nvim' })
 	add({ source = 'water-sucks/darkrose.nvim' })
 
-	vim.cmd('colorscheme vague')
+	vim.cmd('colorscheme rose-pine-moon')
 end)
